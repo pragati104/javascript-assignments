@@ -1,0 +1,35 @@
+<!-- 16. Check if the season is Autumn, Winter, Spring or Summer. If the user input is :
+    - September, October or November, the season is Autumn.
+    - December, January or February, the season is Winter.
+    - March, April or May, the season is Spring -->
+    <!-- - June, July or August, the season is Summer -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>question16</title>
+    </head>
+    <body>
+        <h1>hello</h1>
+        <p id="js"></p>
+        <script>
+            let season =['Autum','Winter','Spring','Summer'];
+            let i=prompt("Enter Month Name:")
+            if(season ==="september" && season === "october" && season === "november"){
+              document.getElementById("js").innerHtml="The season is Autumn"
+            }
+            else if(season==="december"&& season==="january"&& season==="february"){
+                document.getElementById("js").innerText="The season is Winter"
+            }
+            else if(season==="march" &&  season==="april" && season==="may"){
+                document.getElementById("js").innerText="The season is Spring"
+            }
+            else{
+                document.getElementById("js").innerText="The season is Summer"
+            }
+        </script>
+    </body>
+    </html>
